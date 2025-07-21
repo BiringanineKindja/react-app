@@ -1,0 +1,22 @@
+.navbar{
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+img{
+    width: 70px;
+    border-radius: 1rem;
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.navlinks{
+    color: white;
+}
