@@ -1,22 +1,81 @@
-.navbar{
-    background-color: green;
+/* Navbar container */
+.navbar {
+    background-color: #007f00; /* Richer green */
     color: white;
+    padding: 1rem 2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-img{
-    width: 70px;
-    border-radius: 1rem;
+
+/* Logo/image styling */
+img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%; /* Circular profile style */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-.navlinks{
+
+/* Navigation links container */
+.navlinks {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
+    gap: 1.5rem;
 }
-.navlinks{
+
+/* Individual link styling */
+.navlinks a {
     color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navlinks a:hover {
+    color: #ddffdd; /* Light green on hover */
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navlinks {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navlinks a {
+        padding: 0.5rem 0;
+    }
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #007f00;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005c00;
 }

@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 import { addBooks } from '../api';
+import { useNavigate} from 'react-router-dom';
 
 export default function About() {
   const[title,setTitle]=useState("")
   const[author,setAuthor]=useState("")
   const[pages,setPages]=useState("")
+
+  const navigate = useNavigate();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -12,7 +15,7 @@ export default function About() {
     setAuthor("")
     setPages("")
     setTitle("")
-    alert("form submit succesfully")
+    navigate("/books");
   }
   return (
     <div>
