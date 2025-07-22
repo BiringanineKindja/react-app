@@ -1,4 +1,4 @@
-const APIURL = 'http://localhost:4000';
+const APIURL = 'https://bakend-smvp.onrender.com';
 
 // Fetch all books
 export async function getBooks() {
